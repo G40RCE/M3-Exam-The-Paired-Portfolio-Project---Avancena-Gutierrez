@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Quote Generator</title>
+
+</head>
+
+<style>
+
+body {background-color: skyblue }
+
+.pic {
+
+width: 10rem;
+
+height: 10rem
+
+}
+
+.card {
+
+background-color: white;
+
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+transition: 0.3s;
+
+width: 20rem;
+
+height: 10rem;
+
+margin-bottom: 1rem;
+
+}
+
+.container {
+
+padding: 4rem ;
+
+}
+
+</style>
+
+<body >
+
+<div class="card" data-value="Lionel Messi"><div class="container" onclick="getQuote()" style="color: red"> Lionel Messi </div></div>
+
+<br><br>
+
+<div id="Lionel Messi"></div>
+
+<br>
+
+<div class="card" data-value="Christiano Ronaldo"><div class="container" onclick="getQuote()" style="color: green"> Christiano Ronaldo </div></div>
+
+<br><br>
+
+<div id="Christiano Ronaldo"></div>
+
+<br>
+
+<div class="card" data-value="Mahendra Sigh Dhoni"><div class="container" onclick="getQuote()" style="color: purple"> Mahendra Singh Dhoni </div></div>
+
+<br><br><div id="Mahendra Sigh Dhoni"></div>
+
+<br>
+
+<div class="card" data-value="Saurav Ganguly"><div class="container" onclick="getQuote()" style="color: orange"> Saurav Ganguly </div></div>
+
+<br><br><div id="Saurav Ganguly"></div>
+
+<br>
+
+<div class="card" data-value="Tiger Woods"><div class="container" onclick="getQuote()" style="color: brown"> Tiger Woods </div></div>
+
+<br><br><div id="Tiger Woods"></div>
+
+</body>
+
+<script>
+
+function getQuote(){
+
+const personName = this.event.target.parentNode.getAttribute('data-value');
+
+const newButton = document.createElement("button");
+
+newButton.value = personName
+
+newButton.innerHTML = "Get Quote";
+
+newButton.setAttribute('onclick','display()');
+
+const clickedButton = this.event.target.parentNode;
+
+clickedButton.parentNode.insertBefore(newButton,clickedButton.nextSibling);
+
+}
+
+function display()
+
+{
+
+const names = {
+
+"Lionel Messi":["You have to fight to reach your dream. You have to sacrifice and work hard for it."," You can overcome anything, if and only if you love something enough.","If I wasn't paid to be a professional footballer, I would willingly play for nothing.","The best decisions aren't made with your mind, but with your instinct.","Money is not a motivating factor… My motivation comes from playing the game I love."],
+
+"Christiano Ronaldo" :["I'm living a dream I never want to wake up from","Your love makes me strong, your hate makes me unstoppable.","To Be The Best You Need The Best.","If you think you’re perfect already, then you never will be","Dedication, hard work all the time, and belief."],
+
+"Mahendra Sigh Dhoni":["Strong Characters are needed in the game.","I like to make statements on the field.","I love to be in the moment; I love to analyze things a bit.","Leadership is the capacity to translate vision into reality.","You don’t play for the crowd; you play for the country."],
+
+"Saurav Ganguly":["Mistakes do happen and life goes on.","I cherish my entire life. I've been blessed with a life full of good memories.","Everything in life is about standing up and making the most of your opportunities.","Absolutely, I used to run very fast between the wickets.","Captains are always criticised."],
+
+"Tiger Woods":["Winning is not always the barometer of getting better.","The greatest thing about tomorrow is I will be better than I am today.","No matter how good you get you can always get better and that’s the exciting part.","I get to play golf for a living. What more can you ask for - getting paid for doing what you love.","Never listen to other people’s expectations. You should live your life and live up to your own expectation."]
+
+}
+
+const personName = this.event.target.value;
+
+console.log(personName);
+
+const randomQuoteIndex = Math.floor(Math.random()*5);
+
+document.getElementById(personName).innerHTML = names[personName][randomQuoteIndex];
+
+}
+
+</script>
+
+</html>

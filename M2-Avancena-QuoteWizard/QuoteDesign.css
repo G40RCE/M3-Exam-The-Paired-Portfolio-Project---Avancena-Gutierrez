@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+body{
+    background-image: url(quote-inspired-background.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", sans-serif;
+}
+
+.container{
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+    padding: 100px;
+    border-radius: 15px;
+    width: 500px;
+    background-color: rgba(300, 300, 300, 0.9);
+}
+
+.buttons{
+    left:-230px;
+    position: relative;
+    margin-left: 55%;
+    margin-top: 10%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.button1{
+    text-decoration: none;
+    background-color: #A2FCFC;
+    padding: 10px;
+    color: 4px;
+    border-radius: 4px;
+}
+.button2{
+    text-decoration: none;
+    background-color: #A2FCFC;
+    padding: 10px;
+    color: 4px;
+    border-radius: 4px;
+}
+.button3{
+    text-decoration: none;
+    background-color: #A2FCFC;
+    padding: 10px;
+    color: 4px;
+    border-radius: 4px;
+}
+.button4{
+    text-decoration: none;
+    background-color: #A2FCFC;
+    padding: 10px;
+    color: 4px;
+    border-radius: 4px;
+}
+.button5{
+    text-decoration: none;
+    background-color: #A2FCFC;
+    padding: 20px;
+    color: 4px;
+    border-radius: 4px;
+}
+.buttons button{
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    margin-right: 10%;
+}
+
+.getquote{
+    text-decoration: none;
+    background-color: #A2FCFC;
+    padding: 10px;
+    color: 4px;
+    border-radius: 4px;
+}
+
+.quotebutton{
+    margin-top: 20%;
+    width: 200%;
+    display: flex;
+    margin-left: 34%;
+}
+
+.quotebutton button{
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    margin-right: 10%;
+}
+
+
+

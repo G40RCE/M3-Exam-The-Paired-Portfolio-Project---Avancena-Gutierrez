@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="CalorieTrackerDesign.css">
+    <title>CalorieTrak - Avancena</title>
+</head>
+<body>
+    <div class="topbar-calorietrackerpage">
+        <h1>CalorieTrak</h1>
+    </div>
+    <div class="center-information2">
+        <h1>Personal Details:</h1>
+    </div>
+    <p class="center-detail1">Full Name: <span id="visiblename" class="center-fullname"></span></p>
+    <p class="center-detail2">Gender: <span id="visiblegender" class="center-gender"></span></p>
+    <p class="center-detail3">Age: <span id="visibleage" class="center-age"></span></p>
+    <p class="center-detail4">Weight: <span id="visibleweight" class="center-weight"></span> KG</p>
+    <p class="center-detail5">Height: <span id="visibleheight" class="center-height"></span> CM</p>
+    <p class="center-detail6">Activity: <span id="visibleactivity" class="center-activity"></span></p>
+    <script>
+        document.getElementById("visiblename").innerHTML = localStorage.getItem("namevalue");
+        document.getElementById("visiblegender").innerHTML = localStorage.getItem("gendervalue");
+        document.getElementById("visibleage").innerHTML= localStorage.getItem("agevalue");
+        document.getElementById("visibleweight").innerHTML = localStorage.getItem("weightvalue");
+        document.getElementById("visibleheight").innerHTML = localStorage.getItem("heightvalue");
+        document.getElementById("visibleactivity").innerHTML = localStorage.getItem("activitystatus");
+    </script>
+
+    <div class="container">
+    <div class="card">
+        <div class="card-content">
+            <span class="card-title">Add Meal/Item and Calories</span>
+            <form class="col">
+                <div class="textbox">
+                    <div class="input-field col s6">
+                        <input type="text" placeholder="Meal/Item" id="item-name" style="border-width: 2px; border-color: rgb(20, 130, 0);  border-radius: 10px;">
+                        <label for="item-name">Meal</label>
+
+                    </div>
+                    <div class="input-field col s6">
+                        <input type="number" placeholder="Calories" id="item-calories" style="border-width: 2px; border-color: rgb(20, 130, 0);  border-radius: 10px;">
+                        <label for="item-calories">Calories</label>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="btn add-meal" style="text-decoration: none; background-color: #AAE5A4; padding: 10px; color: 4px; border-radius: 4px; border-color: rgb(20, 130, 0)"></i> Add Meal</button>
+                    <button class="reset-btn" style="text-decoration: none; background-color: #AAE5A4; padding: 10px; color: 4px; border-radius: 4px; border-color: rgb(20, 130, 0)"></i> Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <h3 class="box-centered-interface">Calories: <span class="total-calories">0</span></h3>
+    <ul id="item-list" class="collection"></ul>
+
+    <script src="CalorieTrackerFunctions.js"></script>
+</body>

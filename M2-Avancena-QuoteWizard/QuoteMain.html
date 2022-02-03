@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="QuoteDesign.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Quote Generator - Avancena</title>
+</head>
+<body>
+    <div class="container">
+
+        <h1 class="header">Quote Wizard</h1>
+        
+        <h1 id='quote' style="display: none">
+            ' As you think, so shall you become. -Bruce Lee. '
+        </h1>
+        <h1 id='quote2' style="display: none">
+            ' Be the chief but never the lord. -Lao Tzu. '
+        </h1>
+        <h1 id='quote3' style="display: none">
+            ' All truths are easy to understand once they are discovered; the point is to discover them. -Galileo Galilei '
+        </h1>
+        <h1 id='quote4' style="display: none">
+            ' I destroy my enemies when I make them my friends. -Abraham Lincoln '
+        </h1>
+        <h1 id='quote5' style="display: none">
+            ' It is the mark of an educated mind to be able to entertain a thought without accepting it. -Aristotle '
+        </h1>
+        
+
+        <div id="randomquote">
+        <!--Random quotes shows here-->
+        </div>
+    
+
+        <div class="buttons">
+            <button type="button" onclick='toggleText()' class="button1">Bruce Lee</button>
+            <button type="button" onclick='toggleText2()' class="button2">Lao Tzu</button>
+            <button type="button" onclick='toggleText3()' class="button3">Galileo Galilei</button>
+            <button type="button" onclick='toggleText4()' class="button4">Abraham Lincoln</button>
+            <button type="button" onclick='toggleText5()' class="button5">Aristotle</button>
+        </div>
+        <div class="quotebutton">
+            <button onclick="randomQuote()" class="getquote">Get-Quote</button>
+        </div>
+    </div>
+    <script src="QuoteFunctions.js"></script>
+</body>
+</html>

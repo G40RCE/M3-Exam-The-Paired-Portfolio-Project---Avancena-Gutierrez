@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="CalorieTrackerDesign.css">
+    <title>CalorieTrak - Avancena</title>
+</head>
+<body>
+    <div class="topbar">
+        <h1>CalorieTrak</h1>
+    </div>
+    <div class="center-information">
+        <h1>Please enter your personal details to proceed.</h1>
+    </div>
+
+    <div class="table-details">
+
+    <table class="table">
+        <form action="CalorieTrackerPage.html" method="GET">
+          </tr>
+          <tr>
+            <td class="detail">Full Name:</td>
+            <td class="info"><input type="text" name="fullname"  placeholder="" id="name"
+                style="border-width: 2px; border-color: rgb(20, 130, 0);  border-radius: 10px;"><div style="display: none;" id="ATT"></div></td>
+          </tr>
+          <tr>
+            <td class="detail">Gender:</td>
+            <td class="info"><input type="text" name="gender"  placeholder="" id="gender"
+                style="border-width: 2px; border-color: rgb(20, 130, 0);  border-radius: 10px;"><div style="display: none;" id="ATT"></div></td>
+          </tr>
+          <tr>
+            <td class="detail">Age:</td>
+            <td class="info"><input type="text" name="age" placeholder="" id="age" 
+                style="border-width: 2px; border-color: rgb(20, 130, 0);  border-radius: 10px;"><div style="display: none;" id="ATT"></div></td>
+          </tr>
+          <tr>
+            <td class="detail">Weight:</td>
+            <td class="info"><input type="text" name="weight"  id="weight" 
+                style="border-width: 2px; border-color: rgb(20, 130, 0);  border-radius: 10px;" placeholder="Kg"><div style="display: none;" id="WTT"></div></td>
+          </tr>
+          <tr>
+            <td class="detail">Height:</td>
+            <td class="info"><input type="text" name="height" id="height"
+                style="border-width: 2px; border-color: rgb(20, 130, 0);  border-radius: 10px;" placeholder="Cm"><div style="display: none;" id="HTT"></div></td>
+          <tr>
+          </tr>
+          <tr>
+            <td class="detail">Activity:</td>
+            <td class="info"><input type="text" name="activity" id="activity" 
+                style="border-width: 2px; border-color: rgb(20, 130, 0);  border-radius: 10px;" placeholder=""><div style="display: none;" id="HTT"></div></td>
+          <tr>
+            <input type="submit" value="Proceed" onclick="transferValues()" class=validation>
+          </tr>
+        </form>
+        </table>
+
+    
+    </div>
+
+    <script src="CalorieTrackerFunctions.js"></script>
+</body>

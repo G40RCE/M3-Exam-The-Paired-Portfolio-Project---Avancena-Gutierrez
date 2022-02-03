@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:ital,wght@1,400;1,700&family=Raleway&family=Roboto+Slab:wght@500&display=swap");
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #4fd36e 50%, rgb(42, 194, 62) 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.bg4 {
+  animation-duration:3s;
+}
+
+.bg5 {
+  animation-duration:1s;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+.header-title{
+  text-align: center;
+  line-height: 4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #4daf64;
+  z-index: 2;
+}
+
+.header-title h1{
+  margin: 0 50px;
+  color: black;
+  font-size: 55px;
+  font-weight: 2000;
+}
+.header-title h1 span{
+  color: #f7a730;
+  font-weight: 900;
+}
+
+.table-details{
+  max-width: 50rem; 
+  margin: auto; 
+  border: 4px solid #4daf64; 
+  margin-top: 5%; 
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  width: 500px;
+  background-color: rgba(300, 300, 300, 0.9);
+}
+
+.header-details{
+  max-width: 50rem; 
+  margin: auto; 
+  border: 4px solid #4daf64; 
+  margin-top: 9%; 
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+  padding: 50px;
+  border-radius: 15px;
+  width: 300px;
+  background-color: rgba(300, 300, 300, 0.9);
+}
+
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn.dropdown-toggle {
+  width: 150px;
+  text-align: center;
+}
+
+span.caret {
+  position: absolute;
+  left: 90%;
+  top: 45%;
+}
+
+label {
+  padding-top: 5px;
+}
+
+.form-label {
+  padding-left: 0px;
+}
+
+.form-control {
+  border-radius: 100px;
+}
+
+.btn-success {
+  background-color: #3b7d4a im ;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-success:hover {
+  background-color: #4daf64;
+}
+
+img.track {
+  border: 3px solid #8a8a8a;
+}
